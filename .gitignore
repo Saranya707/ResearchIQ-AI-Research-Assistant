@@ -1,0 +1,11 @@
+
+.venv/
+.venv312/
+__pycache__/
+*.pyc
+.DS_Store
+.env
+.env.*
+researchiq_history.db
+*.db-journal
+.streamlit/secrets.toml

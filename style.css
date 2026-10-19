@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap');
+:root { --bg:#0d151d; --side:#101f2a; --panel:#1a2a35; --text:#f4f9fa; --muted:#b5c7ce; --emerald:#27dda5; --border:#304751; }
+html, body, .stApp, [data-testid="stAppViewContainer"], [data-testid="stMain"] { background:var(--bg)!important; color:var(--text)!important; font-family:'DM Sans',sans-serif!important; }
+.block-container { max-width:1450px!important; padding-top:1.5rem!important; padding-bottom:5rem!important; }
+h1,h2,h3,h4,h5,h6 { font-family:'Manrope',sans-serif!important; color:var(--text)!important; font-weight:800!important; }
+[data-testid="stMarkdownContainer"] p, [data-testid="stMarkdownContainer"] li, [data-testid="stMarkdownContainer"] strong { color:var(--text); }
+[data-testid="stCaptionContainer"] p, small { color:var(--muted)!important; }
+.hero { background:linear-gradient(115deg,#0c2b2b,#09503f); border:1px solid #197e65; border-radius:20px; padding:26px 34px; margin-bottom:25px; }
+.hero h1 { color:#fff!important; font-size:2.8rem!important; letter-spacing:-1px; line-height:1.15; margin:0!important; padding:0!important; }
+.hero h1 span { color:var(--emerald)!important; }
+.hero p { color:#d0f7e9!important; font-size:1rem!important; margin:5px 0 0!important; line-height:1.3!important; }
+.section-heading { font-family:'Manrope',sans-serif; font-weight:800; font-size:1.55rem; color:#fff; margin:16px 0 8px; }
+[data-testid="stSidebar"] { background:var(--side)!important; border-right:1px solid var(--border); }
+[data-testid="stSidebar"] > div { background:var(--side)!important; }
+.nav-caption { color:var(--emerald); font-size:.76rem; font-weight:800; letter-spacing:2px; margin:8px 0 18px; }
+[data-testid="stSidebar"] .stButton { margin-bottom:8px; }
+[data-testid="stSidebar"] .stButton button { min-height:50px!important; width:100%!important; text-align:left!important; justify-content:flex-start!important; padding:10px 16px!important; border-radius:12px!important; font-size:1.03rem!important; font-weight:800!important; font-family:'Manrope',sans-serif!important; box-shadow:none!important; }
+[data-testid="stSidebar"] .stButton button[kind="secondary"] { background:transparent!important; color:#e9f7f5!important; border:1px solid transparent!important; }
+[data-testid="stSidebar"] .stButton button[kind="secondary"]:hover { background:#1c3d3b!important; border-color:#28695a!important; }
+[data-testid="stSidebar"] .stButton button[kind="primary"] { background:#075d48!important; color:white!important; border:1px solid #19aa80!important; }
+.sidebar-model { background:#162e37; border:1px solid var(--border); border-radius:14px; padding:18px; margin:12px 0; color:#fff; }
+.sidebar-model-label { font-size:.73rem; letter-spacing:1.5px; font-weight:800; color:var(--emerald); margin-bottom:8px; }
+.sidebar-model strong { font-size:1.06rem; }
+.model-status { color:#8debc9; font-size:.85rem; margin-top:10px; }
+[data-testid="stMetric"] { background:var(--panel)!important; border:1px solid var(--border); border-radius:15px; padding:20px!important; min-height:132px; }
+[data-testid="stMetricLabel"] p { color:var(--muted)!important; font-weight:700!important; }
+[data-testid="stMetricValue"] { color:#f7ffff!important; font-weight:800!important; }
+[data-testid="stFileUploader"] { background:var(--panel)!important; border:1px solid var(--border); border-radius:18px; padding:18px!important; }
+[data-testid="stFileUploaderDropzone"] { background:#132c32!important; border:2px dashed #2dc998!important; border-radius:14px!important; min-height:155px; }
+[data-testid="stFileUploaderDropzone"] *, [data-testid="stFileUploader"] label { color:#ecfffa!important; }
+[data-testid="stFileUploaderFile"] { background:#253840!important; border-radius:10px!important; }
+[data-testid="stFileUploaderFile"] * { color:#f2fbf8!important; }
+[data-testid="stFileUploaderDropzone"] button, .stButton button:not([kind="secondary"]), [data-testid="stFormSubmitButton"] button { background:#0e9774!important; color:#fff!important; border-color:#20c997!important; border-radius:10px!important; }
+[data-testid="stChatMessage"] { background:var(--panel)!important; border:1px solid var(--border)!important; border-radius:14px!important; padding:15px!important; }
+[data-testid="stChatMessage"] p, [data-testid="stChatMessage"] li { color:#f4f9fa!important; }
+[data-testid="stChatMessageAvatarAssistant"] { background:#0a8467!important; }
+[data-testid="stChatMessageAvatarUser"] { background:#295f58!important; }
+[data-testid="stBottomBlockContainer"] { background:var(--bg)!important; }
+[data-testid="stChatInput"] { background:#172a34!important; border:1px solid #21bc91!important; border-radius:12px!important; box-shadow:none!important; }
+[data-testid="stChatInput"]:focus-within { border-color:var(--emerald)!important; box-shadow:0 0 0 1px #27dda555!important; }
+[data-testid="stChatInput"] textarea { background:transparent!important; color:#fff!important; }
+[data-testid="stChatInput"] textarea::placeholder { color:#b7c7cb!important; }
+[data-testid="stChatInput"] button { color:var(--emerald)!important; }
+[data-testid="stAlert"] { background:#1c4038!important; border:1px solid #2c8069!important; border-radius:12px!important; }
+[data-testid="stAlert"] p { color:#e9fff6!important; }
+[data-testid="stExpander"] { background:var(--panel)!important; border:1px solid var(--border)!important; border-radius:12px!important; }
+[data-testid="stExpander"] * { color:#f1faf9; }
+[data-testid="stTextInput"] input { background:#1b303b!important; color:#fff!important; border:1px solid #406058!important; }
+[data-testid="stRadio"] label, [data-testid="stCheckbox"] label { color:#f2fbf8!important; }
+[data-testid="stRadio"] input, [data-testid="stCheckbox"] input { accent-color:var(--emerald)!important; }
+hr { border-color:var(--border)!important; }
+a { color:#68e8c2!important; }
+/* Remove Streamlit's red accent from focused controls */
+:focus-visible { outline-color:#27dda5!important; }
+@media (max-width:800px) { .block-container { padding:1rem!important; } .hero { padding:22px; } .hero h1 { font-size:2.1rem!important; } }
